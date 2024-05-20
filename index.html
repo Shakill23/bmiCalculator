@@ -11,12 +11,12 @@
 <body>
     <div class="container">
         <h1>BMI Calculator</h1>
-        <form id="bmi-form">
+        <form id="bmi-form" onsubmit="calculateBMI(event)">
             <label for="weight">Weight (kg):</label>
-            <input type="number" id="weight" min="1" step="any"><br><br>
+            <input type="number" id="weight" min="1" step="any">
             <label for="height">Height (cm):</label>
-            <input type="number" id="height" min="1" step="any"><br><br>
-            <button onclick="calculateBMI()">Calculate BMI</button><br><br>
+            <input type="number" id="height" min="1" step="any">
+            <button type="submit">Calculate BMI</button>
         </form>
         <div id="result"></div>
     </div>
